@@ -1,0 +1,9 @@
+.parking-item {
+    width: 5rem;
+    height: 5rem;
+    border:1px solid lightblue;
+}
+.parking-container {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,36 @@
+.board-container {
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    box-sizing: border-box;
+  }
+  .out{
+    position: relative;
+    width:236px;
+    height: 236px;
+    border-radius: 50%;
+    border: 2px solid lightgreen;
+    background:green;
+  }
+  .in{
+    position: absolute;
+    z-index: 5;
+    width:206px;
+    height: 206px;
+    border-radius: 50%;
+    border: 2px solid lightgreen;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;        /*以下五个属性为水平垂直居中的方法*/
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

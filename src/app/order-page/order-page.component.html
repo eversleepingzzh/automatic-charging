@@ -1,3 +1,11 @@
-<p>
-  order-page works!
-</p>
+<div>
+  停车位
+</div>
+<div class='parking-container'>
+  <div class='parking-item' 
+      *ngFor='let parking of parkingList'
+      (click)='chooseParking(parking)'
+  >
+    {{parking.order}},{{parking.occupied}}
+  </div>
+</div>

@@ -1,6 +1,14 @@
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd-mobile" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB15EhGJwHqK1RjSZFPXXcwapXa-500-539.png">
-</a>
-<div style='display: flex; justify-content: center; margin-top: 30px'>
-  <div Button style="margin-right: 4px" [type]="'primary'" [inline]="true" (click)='routerToOrder()'>login</div>
+
+<div class='login-container'>
+  <div class='logo'>
+    <img src="../../assets/logo.png" alt="">
+  </div>
+  <div>
+    <InputItem [type]="'phone'" [placeholder]="'Please Input Your Phone Number'"></InputItem>
+    <InputItem [type]="'password'" [placeholder]="'Please Input Password'"></InputItem>
+  </div>
+  <div style='display: flex; justify-content: center; margin-top: 30px'>
+    <div  Button style="margin-right: 4px; width: 100%" [type]="'primary'" [inline]="true" (click)='routerToOrder()'>login</div>
+  </div>
 </div>
+
