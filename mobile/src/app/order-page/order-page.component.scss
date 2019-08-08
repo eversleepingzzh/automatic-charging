@@ -1,9 +1,51 @@
+.place {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.mark {    
+    position: relative;
+    text-indent: 20px;
+}
+.mark:after{    
+    position: absolute;    
+    top:0;    
+    height: 100%;    
+    left:0;    
+    content: '';    
+    width:0;    
+    border-left: solid  #5dd7bf 0.6em;
+}
+
+.title {
+
+}
 .parking-item {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    // height: 5rem;
     border:1px solid lightblue;
+    box-shadow: 0 8px 8px rgba(10,16,20,.24),0 0 8px rgba(10,16,20,.12);
+    margin: 0.5rem;
+    text-align: center;
+}
+.is-active{
+    border:2px solid lightgreen;
 }
 .parking-container {
+    margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
+    background: white;
+    
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }

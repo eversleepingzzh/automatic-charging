@@ -24,4 +24,15 @@ export class OrderPageComponent implements OnInit {
     console.log(111);
     this.router.navigate(['/orderDetail']);
   }
+
+  public chooseIndex(index) {
+    console.log(index)
+    this.parkingList.forEach(p => p.choosen = false);
+    this.parkingList[index].choosen = true;
+  }
+
+  public ensure() {
+    this.router.navigate(['/orderDetail']);
+  }
+
 }

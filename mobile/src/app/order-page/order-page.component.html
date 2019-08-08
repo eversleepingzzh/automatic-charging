@@ -1,11 +1,29 @@
-<div>
-  停车位
-</div>
-<div class='parking-container'>
-  <div class='parking-item' 
-      *ngFor='let parking of parkingList'
-      (click)='chooseParking(parking)'
-  >
-    {{parking.order}},{{parking.occupied}}
+<div style='background:white; padding: 10px;'>
+  <div class="mark title">
+    Parking place location
   </div>
+  <div class='place'>
+    500 dalian road, yangpu district, Shanghai
+  </div>
+  <div class = 'mark title'>
+    Select paring space
+  </div>
+  <div class='parking-container'>
+    <div class='parking-item'
+        *ngFor='let parking of parkingList; let idx = index'
+        [ngClass]="{'is-active':parking.choosen}"
+        (click)='chooseIndex(idx)'
+    > 
+      <span style='font-weight: bold'>No.{{parking.order}}</span>
+      <div style='width: 4rem; margin: 0 auto'> 
+        <img src="../../assets/parking-car-space-zone-512.png" alt="" style='width: 100%'>
+      </div>
+      <span *ngIf='!parking.occupied' style='color: green'>Empty</span>
+      <span *ngIf='parking.occupied' style='color: red'>Occupied</span>
+    </div>
+  </div>
+  
+</div>
+<div class='button'>
+  <div Button style='width: 80%' [type]="'primary'" [inline]="true" (click)='ensure()'>Ensure</div>
 </div>

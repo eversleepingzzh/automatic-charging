@@ -1,10 +1,33 @@
 <div class='board-container'>
     <div class="circle out">
         <div class="circle in center">
-          <p>已冲电量</p>
-          <p><span class=''>0.00</span>度</p>
-          <p>已充时长</p>
-          <p>00小时00分</p>
+          <p><span class='green'>0.00</span>KWh</p>
+          <p>quantity of electricity</p>
         </div>
       </div>
 </div>
+<div class='chargeStatus'>
+  <div class='charge-item' style='border-right: 1px solid lightgray'>
+    <span>8.13</span>
+    <span style='color: gray'>electric current</span>
+  </div>
+  <div class='charge-item'>
+    <span>230</span>
+    <span style='color: gray'>electric voltage</span>
+  </div>
+</div>
+
+<div style='margin-top: 2rem;'>
+  <div class='charge-column' style='border-top: 1px solid lightgray'>
+    <span class='name'>Charging time</span>
+    <span class='value'>01:20:33</span>
+  </div>
+  <div class='charge-column'>
+      <span class='name'>Charging money</span>
+      <span class='value'>9.76</span>
+  </div>
+</div>
+
+<div class='button'>
+    <div Button style='width: 80%' [type]="'primary'" [inline]="true" (click)='ensure()'>Stop Charging</div>
+  </div>
