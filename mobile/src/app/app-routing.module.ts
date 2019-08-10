@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { VideoComponent } from './video/video.component'
 
 const appRoutes: Routes = [
-  { path: 'homePage', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'video', component: VideoComponent },
   { path: 'orderPage', component: OrderPageComponent },
   { path: 'orderDetail', component: OrderDetailComponent},
-  { path: '',   redirectTo: '/homePage', pathMatch: 'full' },
+  { path: '',   redirectTo: '', pathMatch: 'full' },
 ];
 
 

@@ -25,11 +25,12 @@
 
 }
 .parking-item {
-    width: 6rem;
+    width: 25%;
     // height: 5rem;
     border:1px solid lightblue;
     box-shadow: 0 8px 8px rgba(10,16,20,.24),0 0 8px rgba(10,16,20,.12);
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 .is-active{
@@ -40,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     background: white;
-    
+    justify-content: space-around;
 }
 
 .button {

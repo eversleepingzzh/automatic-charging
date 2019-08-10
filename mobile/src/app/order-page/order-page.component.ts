@@ -15,7 +15,7 @@ export class OrderPageComponent implements OnInit {
   ) { }
 
   public parkingList = [];
-
+  public needCharging: false;
   ngOnInit() {
     this.parkingList = this.orderPageService.getParkingPlace();
   }
@@ -32,7 +32,7 @@ export class OrderPageComponent implements OnInit {
   }
 
   public ensure() {
-    this.router.navigate(['/orderDetail']);
+    this.router.navigate(['/video']);
   }
 
 }

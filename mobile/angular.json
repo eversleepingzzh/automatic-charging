@@ -24,13 +24,14 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/library"
             ],
             "styles": [
               "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            // "scripts": ["src/library/ezuikit.js"],
             "es5BrowserSupport": true
           },
           "configurations": {

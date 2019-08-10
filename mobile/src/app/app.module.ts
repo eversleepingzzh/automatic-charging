@@ -10,13 +10,15 @@ import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
 import { HomePageComponent } from './home-page/home-page.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     OrderPageComponent,
-    OrderDetailComponent
+    OrderDetailComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

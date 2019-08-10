@@ -6,7 +6,7 @@
     500 dalian road, yangpu district, Shanghai
   </div>
   <div class = 'mark title'>
-    Select paring space
+    Select parking space
   </div>
   <div class='parking-container'>
     <div class='parking-item'
@@ -22,7 +22,16 @@
       <span *ngIf='parking.occupied' style='color: red'>Occupied</span>
     </div>
   </div>
-  
+  <div class = 'mark title'>
+    Select need charging
+  </div>
+  <List [renderHeader]="renderHeader">
+    <CheckboxItem
+    [(ngModel)] = 'needCharging'
+    >
+      Need charging?
+    </CheckboxItem>
+  </List>
 </div>
 <div class='button'>
   <div Button style='width: 80%' [type]="'primary'" [inline]="true" (click)='ensure()'>Ensure</div>

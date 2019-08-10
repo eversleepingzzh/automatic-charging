@@ -12,4 +12,7 @@ export class OrderDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  stopCharge() {
+    //todo  
+  }
 }
